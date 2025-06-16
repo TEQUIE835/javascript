@@ -1,2 +1,2 @@
 # javascript
-A repo for my javascript prcatice for a couple of weeks
+Just a simple repo for small javascript works proposed by my TL to practice
