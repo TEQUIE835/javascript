@@ -99,3 +99,15 @@ if (usuario.toLocaleLowerCase() == "admin"){
 let numerocomparar = prompt(`Ingrese un numero: `,``)
 condicionalternario = (numerocomparar % 2 == 0)?"El numero es par":"El numero es impar"
 console.log(condicionalternario)
+
+// probando distintos tipos de forma de mostrar en la consola
+
+
+console.time(`timer`)
+console.log(`log`)
+console.warn(`warn`)
+console.error(`error`)
+console.group(`group`)
+console.log(`aea`)
+console.groupEnd
+console.timeEnd(`timer`)
