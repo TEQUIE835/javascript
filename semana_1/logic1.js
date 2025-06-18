@@ -106,4 +106,160 @@ for ( let fruta of frutas){
     console.log(color)
  }
 
- 
+ let numerospares = numeros.filter(numero => numero%2 === 0)
+
+for (let numero of numerospares){
+    console.log(numero)
+}
+
+frutas.splice(2, 1, `Sandia`)
+for (let fruta of frutas){
+    console.log(fruta)
+}
+let cadenas = [`Hola`, `como`, `estas`]
+
+let unidas = cadenas.join(` `)
+
+console.log(unidas)
+
+let nombres = [`David`, `Ana`, `Alberto`, `Alfredo`, `Emanuel`, `Daniel`]
+
+for (nombr of nombres){
+    console.log(nombr)
+}
+nombres.sort
+
+for (nombr of nombres){
+    console.log(nombr)
+}
+
+nombres.reverse
+for (nombr of nombres){
+    console.log(nombr)
+}
+
+let buscar = prompt(`Ingrese el nombre a buscar: `, ``)
+
+for (nombr of nombres){
+    if (nombr.toLocaleLowerCase() == buscar.toLocaleLowerCase()){
+        console.log(`Tu nombre se encuentra en la lista`)
+        break
+    }
+}
+
+for (let letra of `comida`){
+    console.log(letra)
+}
+
+for(let i = 1; i <= 5; i++){
+    console.log(i)
+}
+
+for(let letra in `comida`){
+    console.log(`${letra} ${`comida`[letra]}`)
+}
+
+for (let nombr of nombres){
+    console.log(`Hola ${nombr}`)
+}
+
+for (let color in colores){
+    console.log(color)
+}
+
+for (let numero in numeros){
+    console.log(`el numero ${numeros[numero]} esta en la posicion ${numero}`)
+}
+
+const persona = {}
+
+persona.cabello = "Negro"
+persona.ojos = "verde"
+
+console.log(persona)
+
+
+const libro = {}
+
+libro.genero = "fantasia"
+
+libro.autor = "jorge"
+
+console.log(libro)
+
+libro.genero = "ciencia ficcion"
+console.log(libro)
+
+const auto = {}
+
+auto.marca = "Hyundai"
+
+auto.modelo =  "Kona"
+
+auto.year = "2021"
+
+console.log(auto)
+
+const estudiante = {}
+
+estudiante.cabello = "marron"
+estudiante.notas = "promedio"
+estudiante.ojos = "marron oscuro"
+
+for (let prop in estudiante){
+    console.log(prop,` `, estudiante[prop])
+}
+
+function saludar(nombre){
+    console.log(`Hola ${nombre}!`)
+}
+
+saludar(`Alberto`)
+
+function suma (num1, num2){
+   let num3 = num1+num2
+
+   return num3
+}
+
+nume = suma(2, 4)
+
+console.log(nume)
+
+
+function espar(numero){
+   let par = numero % 2
+
+   if (par==0){
+    console.log(`Es par`)
+    return true
+} else if (par != 0){
+    console.log(`No es par`)
+    return false
+} else{
+     console.log(`Ingrese un numero valido`)
+}
+}
+let par = espar(4)
+let impar = espar(5)
+
+console.log(par, ` `, impar)
+
+function areaRectangulo(base, altura){
+    let area = base * altura
+    return area
+}
+
+let area = areaRectangulo(5, 3)
+
+console.log(area)
+
+
+function celsiusAFarenheit(c){
+    f = c * 1.8 +32
+    return f
+}
+
+let farenheit = celsiusAFarenheit(25)
+
+console.log(farenheit)
